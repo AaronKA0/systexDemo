@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Success Login</title>
+<link rel="stylesheet" th:href="@{/css/myStyle.css}">
+</head>
+<body>
+
+	<H2>登入成功</H2>
+	<table style="text-align: left;">
+		<tbody>
+			<tr>
+		    	<td>ID:</td>
+		    	<td th:text="${member.id}"></td>
+		    </tr>
+			<tr>
+		    	<td>Username:</td>
+		    	<td th:text="${member.username}"></td>
+		    </tr>
+			<tr>
+		    	<td>Name:</td>
+		    	<td th:text="${member.name}"></td>
+		    </tr>
+			<tr>
+		    	<td>Email:</td>
+		    	<td th:text="${member.email}"></td>
+		    </tr>
+	    </tbody>
+    </table>
+    
+    <a href="/demo">回首頁</a>
+	
+</body>
+</html>
